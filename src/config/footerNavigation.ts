@@ -46,44 +46,40 @@ export const footerNavigationData: FooterData = {
 	},
 	footerColumns: [
 		{
-			category: 'Product',
+			category: 'Asociación Civil',
 			subCategories: [
 				{
-					subCategory: 'Features',
-					subCategoryLink: '/features'
+					subCategory: 'Inicio',
+					subCategoryLink: '/'
 				},
 				{
-					subCategory: 'FAQ',
-					subCategoryLink: '/faq'
+					subCategory: 'Nosotros',
+					subCategoryLink: '/about'
 				},
 				{
-					subCategory: 'Pricing',
-					subCategoryLink: '/pricing'
+					subCategory: 'Contacto',
+					subCategoryLink: '/contact'
 				},
 				{
-					subCategory: 'Changelog',
-					subCategoryLink: '/changelog'
-				},
-				{
-					subCategory: 'Terms',
-					subCategoryLink: '/terms'
+					subCategory: 'Blog',
+					subCategoryLink: '/blog'
 				}
 			]
 		},
 		{
-			category: 'About us',
+			category: 'Formaciones',
 			subCategories: [
 				{
-					subCategory: 'About us',
-					subCategoryLink: '/'
+					subCategory: 'Formación en Salud Perinatal',
+					subCategoryLink: '/formacion-fsp'
 				},
 				{
-					subCategory: 'News',
-					subCategoryLink: '/blog'
+					subCategory: 'Formación de Doulas',
+					subCategoryLink: '/formacion-fd'
 				},
 				{
-					subCategory: 'Careers',
-					subCategoryLink: '/blog'
+					subCategory: 'Formación en Lactancia Humana',
+					subCategoryLink: '/formacion-flh'
 				}
 			]
 		},
@@ -91,17 +87,17 @@ export const footerNavigationData: FooterData = {
 			category: 'Get in touch',
 			subCategories: [
 				{
-					subCategory: 'Contact',
-					subCategoryLink: '/contact'
+					subCategory: 'Preguntas Frecuentes',
+					subCategoryLink: '/faq'
 				},
 				{
-					subCategory: 'Support',
-					subCategoryLink: '/contact'
+					subCategory: 'Políticas de Privacidad',
+					subCategoryLink: '/'
 				},
 				{
-					subCategory: 'Join us',
-					subCategoryLink: '/contact'
-				}
+					subCategory: 'Términos y Condiciones',
+					subCategoryLink: '/terms'
+				},
 			]
 		}
 	],

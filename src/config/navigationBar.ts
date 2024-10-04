@@ -35,21 +35,21 @@ export const navigationBarData: NavData = {
 	logo: {
 		src: '/logo.svg',
 		alt: 'Escuela Argentina de Salud Perinatal',
-		text: 'EASPAC'
+		text: ' '
 	},
 	navItems: [
-		{ name: 'Inicio', link: '/' },
+
 		{ name: 'Nosotros', link: '/about' },
 		{
 			name: 'Formaciones',
 			link: '#',
 			submenu: [
-				{ name: 'Blog', link: '/blog' },
-				{ name: 'Changelog', link: '/changelog' },
-				{ name: 'FAQ', link: '/faq' },
-				{ name: 'Terms', link: '/terms' }
+				{ name: 'Formación en Salud Perinatal', link: '/formacion-fsp' },
+				{ name: 'Formación de Doulas', link: '/formacion-fd' },
+				{ name: 'Formación en Lactancia Humana', link: '/formacion-flh' },
 			]
 		},
+		{ name: 'Aula Virtual', link: 'https://aulavirtual.easp.com.ar' },
 		{ name: 'Contacto', link: '/contact' }
 	],
 	navActions: [{ name: 'Quiero asesorarme', link: '/about', style: 'primary', size: 'lg' }]
