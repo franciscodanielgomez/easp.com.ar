@@ -35,9 +35,9 @@ export interface FooterData {
 
 export const footerNavigationData: FooterData = {
 	footerAbout: {
-		title: 'Foxi.',
+		title: 'EASPAC',
 		aboutText:
-			'Expertly made, responsive, accessible components in React and HTML ready to be used on your website or app. Just copy and paste them on your Tailwind CSS project.',
+			'Somos profesionales de la salud que trabajamos para promover embarazos saludables, partos respetados, puerperios seguros y el cuidado de la salud del bebé en sus 3 primeros años de vida.',
 		logo: {
 			src: '/logo.svg',
 			alt: 'The tailwind astro theme',
@@ -106,6 +106,6 @@ export const footerNavigationData: FooterData = {
 		}
 	],
 	subFooter: {
-		copywriteText: '© Foxi 2024.'
+		copywriteText: '© Escuela Argentina de Salud Perinatal Asociación Civil 2024.'
 	}
 }
