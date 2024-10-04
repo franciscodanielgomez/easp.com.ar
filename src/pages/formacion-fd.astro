@@ -1,0 +1,239 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import SidebarContent from '../components/blocks/basic/StickySidebar.astro'
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import Button from "../components/ui/Button.astro";
+import Row from "../components/ui/Row.astro";
+import Col from "../components/ui/Col.astro";
+import Card from "../components/ui/cards/FeatureCard.astro";
+import Feature from "../components/ui/Feature.astro";
+
+// Content
+// - SEO
+const SEO = {
+    title: 'EASPAC | Formación de Doula',
+    description:
+        "Las Doulas acompañan a la búsqueda del embarazo, gestación, trabajo de parto, parto y puerperio."
+}
+// - Page Header
+const header = {
+    title: 'Formación de <strong>Doula</strong>.',
+    text: 'Las Doulas acompañan a la búsqueda del embarazo, gestación, trabajo de parto, parto y puerperio.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+    <Hero title={header.title} text={header.text}/>
+    <SidebarContent>
+        <div slot="sidebar">
+            <h4>Formación Profesional</h4>
+            <p>
+                Su labor fundamental es dar soporte físico y afectivo durante dicho proceso, a través de una mirada
+                amorosa y respetuosa.
+            </p>
+        </div>
+
+        <div class="basic-text">
+            <Row>
+
+                <Col span="4">
+                    <Feature align="left" classes="mb-12">
+                        <h4>Resumen</h4>
+                        <ul class="course-details">
+                            <li>300 horas</li>
+                            <li>Inicia el 04/03/2024</li>
+                            <li>Clases virtuales</li>
+                            <li>Con certificación</li>
+                        </ul>
+                    </Feature>
+                </Col>
+                <Col span="4">
+                    <Feature align="left" classes="mb-12">
+                        <h4>Modalidad</h4>
+                        <ul class="course-details">
+                            <li>5 meses de cursado</li>
+                            <li>Clases sincrónicas</li>
+                            <li>Tutorías individuales y grupales</li>
+                            <li>Clases grabadas de soporte</li>
+                        </ul>
+                    </Feature>
+                </Col>
+                <Col span="4">
+                    <Feature align="left" classes="mb-12">
+                        <h4>Destinado a</h4>
+                        <ul class="course-details">
+                            <li>Público general</li>
+                        </ul>
+                    </Feature>
+                </Col>
+
+
+            </Row>
+
+        </div>
+
+
+    </SidebarContent>
+
+    <SidebarContent classes="bg-neutral-50 dark:bg-neutral-900">
+        <div slot="sidebar">
+            <h3>Más información</h3>
+            <p>
+                Red interdisciplinaria que promueve salud perinatal con respeto y accesibilidad.
+            </p>
+        </div>
+        <div class="basic-text">
+            <h4>Nos distingue</h4>
+            <p>Ser una red interdisciplinaria de profesionales y docentes que trabajan para cuidar y mejorar la salud
+                perinatal. Promovemos la cercanía en el proceso de aprendizaje, tanto durante el cursado como en el
+                acompañamiento posterior. Valoramos el respeto por cada profesión y su desempeño, así como por las
+                diversas culturas, creencias y decisiones familiares y profesionales.
+            </p>
+            <p>
+                Nos comprometemos a garantizar la accesibilidad para aquellos que deseen seguir formándose y aprendiendo
+                desde distintas disciplinas. Fomentamos la calidez humana y profesional en todas nuestras interacciones,
+                actuando con honestidad en cada aspecto de nuestro trabajo. Además, buscamos mantener una comunicación
+                fluida a través de todos los canales disponibles y fomentar un trabajo interdisciplinario continuo.
+            </p>
+
+
+            <h4>Objetivos de nuestra Formación</h4>
+            <p>Aportar información actualizada y basada en la evidencia de manera integral e interdisciplinaria a
+                quienes trabajen e interesen en la promoción, protección y fortalecimiento de embarazos saludables, así
+                como en la atención de trabajos de parto y partos respetados, y puerperios seguros y acompañados.
+                Buscamos visibilizar la importancia de establecer vínculos saludables que fomenten el bienestar físico,
+                mental y social, respetando la cultura, creencias y realidades de cada familia y disciplina profesional.
+            </p>
+            <p>
+                Nos proponemos generar un cuidado integral y transdisciplinario con un enfoque ecosistémico centrado en
+                la familia, acompañando sus necesidades y deseos durante este período tan vulnerable y fundamental,
+                integrando el curso de vida. Además, desarrollamos herramientas y habilidades para apoyar a la gestante,
+                las diadas y la familia durante la gestación, el trabajo de parto, el parto y el puerperio, siempre
+                desde el respeto y la integralidad de la persona.
+            </p>
+        </div>
+    </SidebarContent>
+    <SidebarContent>
+        <div slot="sidebar">
+            <h3>Programa</h3>
+            <p>
+                Salud, lactancia y desarrollo infantil en perinatalidad.
+            </p>
+        </div>
+        <div class="basic-text">
+            <h4>Clase 1: Salud prenatal</h4>
+            <p>
+                Historia de la doula. Su importancia. Salud y atención prenatal. Quiénes intervienen. Necesidades. Microbiota en la perinatalidad.
+                Maternidades seguras y centradas en la familia. Cambios fisiológicos, físicos, biológicos, emocionales, sociales durante cada trimestre de gestación. Ciclo hormonal.
+            </p>
+
+            <h4>Clase 2: Planificación familiar</h4>
+            <p>
+                Anticoncepción. Métodos compatibles con la lactancia humana. Planificación Familiar.
+            </p>
+
+            <h4>Clase 3: Taller vivencial gestación</h4>
+            <p>
+                Recorrido vivencial.
+            </p>
+
+            <h4>Clase 4: Parto humanizado</h4>
+            <p>
+                Parto respetado. Ley. Plan de nacimiento. Fisiología del parto. Hormonas que intervienen. Necesidades durante el parto. Parto domiciliario. Parto hospitalario. Información y decisión. Trato respetuoso materno y neonatal. Sala de parto humanizado con adaptación cultural. Figuras que acompañan.
+            </p>
+
+            <h4>Clase 5: Taller vivencial nacimiento</h4>
+            <p>
+                Recorrido vivencial.
+            </p>
+
+            <h4>Clase 6: Salud mental perinatal</h4>
+            <p>
+                Concepto. Objetivos. Cambios emocionales durante el embarazo y parto. Díada. Vínculo. Apego. Construcción de la ma-paternidad como crisis vital. Rol de la pareja durante la etapa perinatal. Períodos de conexión y vínculo intrauterino.
+            </p>
+
+
+            <h4>Clase 7: Primeros cuidados durante el puerperio</h4>
+            <p>
+                Cuidados preventivos durante el puerperio. Físicos, emocionales, sociales. Mirada oportuna y transdisciplinaria. Puerperio: según la medicina y la psicología. Baby blues. Depresión post parto. Mirada oportuna y transdisciplinaria.
+            </p>
+
+            <h4>Clase 8: Duelo en la perinatalidad</h4>
+            <p>
+                Muerte materna. Muerte neonatal. Duelo perinatal. Necesidades de la diada y la familia. Rol como profesionales que acompañan.
+            </p>
+
+            <h4>Clase 9: Lactancia y su historia</h4>
+            <p>
+                Historia de la lactancia. COPAP. Beneficios. Decálogo de la lactancia. Leyes de protección de la lactancia. Propiedades de la leche humana. Lactancia y microbiota. Eje entero-bronco-mamario.
+            </p>
+
+
+            <h4>Clase 10: Anatomofisiología de la Lactancia humana</h4>
+            <p>
+                Anatomía. Fisiología de la lactancia materna. 1° Semana. Ofrecimiento. Succión. 1° mes. Accesorios de la lactancia.
+            </p>
+
+
+            <h4>Clase 11: Código internacional de sucedáneos de la leche materna</h4>
+            <p>
+                Código internacional de sucedáneos de la leche materna. Historia de la leche de fórmula.
+            </p>
+
+            <h4>Clase 12: Extracción y manipulación de la leche humana</h4>
+            <p>
+                Extracción, manipulación y conservación domiciliaria y hospitalaria. Dispositivos asociados a la lactancia materna.
+            </p>
+
+
+            <h4>Clase 13: Aspectos preventivos de la lactancia humana</h4>
+            <p>
+                Aspectos preventivos y de detección temprana de enfermedades. Lesiones. Medicamentos y lactancia materna.
+            </p>
+
+            <h4>Clase 14: Taller vivencial: “Rol de la doula”</h4>
+            <p>
+                Caminar el rol desde la vivencia.
+            </p>
+
+            <h4>Clase 15: Cuidados del recién nacido</h4>
+            <p>
+                Estudios del recién nacido. Screening. Pesquisa neonatal. Descenso de peso. Ictericia fisiológica. Deposiciones. Cordón umbilical. Baño.
+            </p>
+
+            <h4>Clase 16: Sueño seguro</h4>
+            <p>
+                Sueño seguro. Espacios. Temperatura. Recursos. Recomendaciones.
+            </p>
+
+            
+        </div>
+    </SidebarContent>
+    <SidebarContent classes="bg-neutral-50 dark:bg-neutral-900">
+        <div slot="sidebar">
+            <h3>Descargar PDF</h3>
+            <p>
+                Descarga la información completa sobre nuestra formación.
+            </p>
+        </div>
+        <div class="basic-text">
+            <h4>¿Te animamos a sumarte a este proceso?</h4>
+            <p>
+                Te invitamos a ser parte de un modelo de atención y acompañamiento que deje huellas favorables en las
+                familias y sociedad.
+            </p>
+            <a href="/src/assets/20240202-FSP.pdf" target="_blank">
+                <Button>
+                    Descargar PDF
+                </Button>
+            </a>
+
+
+        </div>
+    </SidebarContent>
+
+
+</Layout>
