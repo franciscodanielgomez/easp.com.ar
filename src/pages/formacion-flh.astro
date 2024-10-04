@@ -1,0 +1,253 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import SidebarContent from '../components/blocks/basic/StickySidebar.astro'
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import Button from "../components/ui/Button.astro";
+import Row from "../components/ui/Row.astro";
+import Col from "../components/ui/Col.astro";
+import Card from "../components/ui/cards/FeatureCard.astro";
+import Feature from "../components/ui/Feature.astro";
+
+// Content
+// - SEO
+const SEO = {
+    title: 'EASPAC | Formación en Lactancia Humana',
+    description:
+        "Nuestra Formación te espera."
+}
+// - Page Header
+const header = {
+    title: 'Formación en <strong>Lactancia Humana</strong>.',
+    text: 'Nuestra Formación te espera.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+    <Hero title={header.title} text={header.text}/>
+    <SidebarContent>
+        <div slot="sidebar">
+            <h4>Formación Profesional</h4>
+            <p>
+                Creemos firmemente en un acompañamiento humanizado, basado en la evidencia de la mano de profesionales
+                comprometidos.
+            </p>
+        </div>
+
+        <div class="basic-text">
+            <Row>
+
+                <Col span="4">
+                    <Feature align="left" classes="mb-12">
+                        <h4>Resumen</h4>
+                        <ul class="course-details">
+                            <li>300 horas</li>
+                            <li>Inicia el 05/03/2024</li>
+                            <li>Clases virtuales</li>
+                            <li>Con certificación</li>
+                        </ul>
+                    </Feature>
+                </Col>
+                <Col span="4">
+                    <Feature align="left" classes="mb-12">
+                        <h4>Modalidad</h4>
+                        <ul class="course-details">
+                            <li>5 meses de cursado</li>
+                            <li>Exámenes al finalizar cada módulo</li>
+                            <li>1 examen final</li>
+                            <li>Clases sincrónicas y asincrónicas</li>
+                            <li>Tutorías individuales</li>
+                        </ul>
+                    </Feature>
+                </Col>
+                <Col span="4">
+                    <Feature align="left" classes="mb-12">
+                        <h4>Destinado a</h4>
+                        <ul class="course-details">
+                            <li>Profesionales de Salud</li>
+                            <li>Profesionales de Educación</li>
+                            <li>Estudiantes avanzados de carreras afines</li>
+                        </ul>
+                    </Feature>
+                </Col>
+
+
+            </Row>
+
+        </div>
+
+
+    </SidebarContent>
+
+    <SidebarContent classes="bg-neutral-50 dark:bg-neutral-900">
+        <div slot="sidebar">
+            <h3>Más información</h3>
+            <p>
+                Red interdisciplinaria que promueve salud perinatal con respeto y accesibilidad.
+            </p>
+        </div>
+        <div class="basic-text">
+            <h4>Nos distingue</h4>
+            <p>Somos una red interdisciplinaria de profesionales y docentes comprometidos con el cuidado y la mejora de
+                la salud perinatal. Promovemos la cercanía durante el proceso de aprendizaje y más allá, garantizando un
+                acompañamiento constante. Valoramos y respetamos el desempeño de cada profesión, así como las diversas
+                culturas, creencias y decisiones tanto familiares como profesionales. Nuestro enfoque se basa en la
+                accesibilidad, para que quienes deseen seguir formándose puedan hacerlo desde diferentes disciplinas.
+                Actuamos con calidez humana y profesional, manteniendo la honestidad en todo lo que hacemos, fomentando
+                una comunicación fluida a través de los canales disponibles y asegurando un trabajo interdisciplinario
+                continuo.
+            </p>
+
+
+            <h4>Objetivos de nuestra Formación</h4>
+            <p>El objetivo es adquirir habilidades relacionadas con la lactancia humana, tanto desde la teoría como
+                desde la práctica, basadas en la evidencia científica, para acompañar a las familias en su recorrido,
+                con un compromiso centrado en la prevención, promoción y protección de la lactancia. Se busca
+                desarrollar empatía, escucha activa y un acompañamiento respetuoso hacia las familias y los demás
+                profesionales. Formar asesoras y asesores capaces de apoyar lactancias deseadas, posibles, sostenidas y
+                cuidadas. Además, se pretende generar habilidades para identificar y detectar situaciones de salud que
+                requieran derivaciones oportunas a profesionales idóneos, fomentando el trabajo interdisciplinario en
+                conjunto con equipos de salud y educación.</p>
+        </div>
+    </SidebarContent>
+    <SidebarContent>
+        <div slot="sidebar">
+            <h3>Programa</h3>
+            <p>
+                Salud, lactancia y desarrollo infantil en perinatalidad.
+            </p>
+        </div>
+        <div class="basic-text">
+            <h4>Clase 1: Introducción a la salud perinatal</h4>
+            <p>
+                Salud perinatal. Concepto. Quiénes intervienen. Atención prenatal. Fisiología del embarazo. Plan de nacimiento. Información y decisión. Fisiología del parto. Trato respetuoso materno y neonatal.
+            </p>
+
+            <h4>Clase 2: Introducción a la salud mental perinatal</h4>
+            <p>
+                Salud mental perinatal. Objetivos. Cambios emocionales durante el embarazo, parto y postparto. Construcción de la ma-paternidad como crisis vital. Rol de la pareja durante la etapa perinatal. Nuevas parentalidades. Períodos de conexión y vínculo intrauterino. Puerperio: según la medicina y la psicología. Baby blues. Depresión post parto.
+            </p>
+            <h4>Clase 3: Apego</h4>
+            <p>
+                Apego. Teoría. Recursos.
+            </p>
+
+
+            <h4>Clase 4: Mitos y lactancia humana</h4>
+            <p>
+                Aspectos culturales, sociológicos y psicológicos relacionados con la lactancia. Recursos durante el acompañamiento.
+            </p>
+
+            <h4>Clase 5: Habilidades de comunicación en la consejería</h4>
+            <p>
+                Escucha activa. Comunicación verbal y no verbal. Recursos.
+            </p>
+
+            <h4>Clase 6: Rol del cuidado en la lactancia</h4>
+            <p>
+                Propiedades de la leche humana. Fases. Lactancia y microbiota. Eje entero-bronco-mamario.
+            </p>
+
+            <h4>Clase 7: Composición y microbiota de la leche humana</h4>
+            <p>
+                Propiedades de la leche humana. Fases. Lactancia y microbiota. Eje entero-bronco-mamario.
+            </p>
+
+            <h4>Clase 8: Anatomía del sistema estomatognático del lactante</h4>
+            <p>
+                Sistema estomatognático, generalidades anatómicas. Tipos de succión, funcional y disfuncional. Tetinas artificiales. Su impacto en la lactancia y en el desarrollo del sistema estomatognático. Patologías. Flap. Anquiloglosia.
+            </p>
+
+            <h4>Clase 9: Lactancia humana I</h4>
+            <p>
+                Historia de la lactancia humana. Anatomofisiología de la lactancia humana. Embarazo y lactancia. Primera toma y COPAP.
+            </p>
+
+            <h4>Clase 10: Lactancia humana II</h4>
+            <p>
+                Agarre, posturas. Vuelta a casa. Primeros meses.
+            </p>
+
+            <h4>Clase 11: Dispositivos y accesorios de la lactancia</h4>
+            <p>
+                Dispositivos asociados a la lactancia materna. Accesorios. Historia de la leche de fórmula. Indicaciones. Código internacional de sucedáneos de la leche materna. Regulación. Quiénes intervienen.
+            </p>
+
+
+            <h4>Clase 12: Extracción, conservación y administración de la leche materna</h4>
+            <p>
+                Extracción manual y mecánica. Manipulación y conservación domiciliaria. Vuelta al trabajo remunerado. Bancos de leche humana, domiciliaria y hospitalaria.
+            </p>
+
+
+            <h4>Clase 13: Duelo en la perinatalidad</h4>
+            <p>
+                Duelo perinatal. Necesidades de la diada y la familia. Recursos. Leyes. Rol como profesionales que acompañan.
+            </p>
+
+            <h4>Clase 14: Protección, promoción y prevención de la lactancia materna</h4>
+            <p>
+                Leyes de protección de la lactancia. Maternidades seguras y centradas en la familia. Centros de lactancia. Lactarios. Espacios amigos de la lactancia.
+            </p>
+
+            <h4>Clase 15: Lactancia en la prematuridad</h4>
+            <p>
+                Necesidades en la prematuridad. Método madre canguro. Nutrición. Crecimiento del lactante. Enfermedad materna y neonatal. Compatibilidad de medicamentos, contraindicaciones. Factores a evaluar.
+            </p>
+
+            <h4>Clase 16: Lesiones del tejido blando</h4>
+            <p>
+                Aspectos preventivos y de detección temprana de enfermedades. Lesiones. Ingurgitación, obstrucción, perlas de leche, mastitis inflamatoria e infecciosa.
+            </p>
+
+
+            <h4>Clase 17: Destete</h4>
+            <p>
+                Destete fisiológico, dirigido, abrupto, huelgas de lactancia, destete no respetuoso, destete diurno y destete nocturno. Cualidades para acompañarlo. Recursos. Agitación del amamantamiento. Motivos y situaciones a valorar, pautas de estimulación, herramientas, suplementos, galactogogos. Equipo interdisciplinario.
+            </p>
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </SidebarContent>
+    <SidebarContent classes="bg-neutral-50 dark:bg-neutral-900">
+        <div slot="sidebar">
+            <h3>Descargar PDF</h3>
+            <p>
+                Descarga la información completa sobre nuestra formación.
+            </p>
+        </div>
+        <div class="basic-text">
+            <h4>¿Te animamos a sumarte a este proceso?</h4>
+            <p>
+                Te invitamos a ser parte de un modelo de atención y acompañamiento que deje huellas favorables en las
+                familias y sociedad.
+            </p>
+            <a href="/src/assets/20240202-FLH.pdf" target="_blank">
+                <Button>
+                    Descargar PDF
+                </Button>
+            </a>
+
+
+        </div>
+    </SidebarContent>
+
+
+</Layout>
