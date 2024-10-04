@@ -105,13 +105,14 @@ const savedNavActions = navActions.map((action) => ({
 
 			<!-- Navigation action buttons -->
 			<div class="header__actions">
-				{
-					savedNavActions.map((action) => (
-						<Button classes="flex-auto" size={action.size} style={action.style} modal="signup">
-							{action.name}
-						</Button>
-					))
-				}
+				<Button
+					classes="flex-auto"
+					size="lg"
+					style="primary"
+					link="https://wa.me/5493515552336"
+				>
+					Solicitar asesoría
+				</Button>
 			</div>
 		</nav>
 	</div>
