@@ -6,6 +6,10 @@ import Layout from '../layouts/Layout.astro'
 import SidebarContent from '../components/blocks/basic/StickySidebar.astro'
 import Hero from '../components/blocks/hero/PageHeader.astro'
 import Button from "../components/ui/Button.astro";
+import Row from "../components/ui/Row.astro";
+import Col from "../components/ui/Col.astro";
+import Card from "../components/ui/cards/FeatureCard.astro";
+import Feature from "../components/ui/Feature.astro";
 
 // Content
 // - SEO
@@ -25,42 +29,58 @@ const header = {
     <Hero title={header.title} text={header.text}/>
     <SidebarContent>
         <div slot="sidebar">
-            <h3>Introducción</h3>
+            <h4>Formación Profesional</h4>
             <p>
                 Creemos firmemente en un acompañamiento humanizado, basado en la evidencia de la mano de profesionales
                 comprometidos.
             </p>
         </div>
+
         <div class="basic-text">
-            <h4>Información general</h4>
-            <br>
-            <ul class="course-details">
-                <li>500 horas</li>
-                <li>Inicia el 06/03/2024</li>
-                <li>Clases virtuales</li>
-                <li>Con certificación</li>
-            </ul>
-            <br>
-            <h4>Destinado a</h4>
-            <br>
-            <ul class="course-details">
-                <li>Profesionales de Salud</li>
-                <li>Profesionales de Educación</li>
-                <li>Estudiantes avanzados de carreras afines</li>
-            </ul>
-            <br>
-            <h4>Modalidad</h4>
-            <br>
-            <ul class="course-details">
-                <li>10 meses de cursado.</li>
-                <li>2 exámenes parciales.</li>
-                <li>1 examen final.</li>
-                <li>Clases sincrónicas.</li>
-                <li>Clases asincrónicas.</li>
-                <li>Tutorías individuales.</li>
-            </ul>
+            <Row>
+
+                <Col span="4">
+                    <Feature align="left" classes="mb-12">
+                        <h4>Resumen</h4>
+                        <ul class="course-details">
+                            <li>500 horas</li>
+                            <li>Inicia el 06/03/2024</li>
+                            <li>Clases virtuales</li>
+                            <li>Con certificación</li>
+                        </ul>
+                    </Feature>
+                </Col>
+                <Col span="4">
+                    <Feature align="left" classes="mb-12">
+                        <h4>Modalidad</h4>
+                        <ul class="course-details">
+                            <li>10 meses de cursado.</li>
+                            <li>2 exámenes parciales.</li>
+                            <li>1 examen final.</li>
+                            <li>Clases sincrónicas y asincrónicas.</li>
+                            <li>Tutorías individuales.</li>
+                        </ul>
+                    </Feature>
+                </Col>
+                <Col span="4">
+                    <Feature align="left" classes="mb-12">
+                        <h4>Destinado a</h4>
+                        <ul class="course-details">
+                            <li>Profesionales de Salud</li>
+                            <li>Profesionales de Educación</li>
+                            <li>Estudiantes avanzados de carreras afines</li>
+                        </ul>
+                    </Feature>
+                </Col>
+
+
+            </Row>
+
         </div>
+
+
     </SidebarContent>
+
     <SidebarContent classes="bg-neutral-50 dark:bg-neutral-900">
         <div slot="sidebar">
             <h3>Más información</h3>
@@ -165,12 +185,14 @@ const header = {
 
             <strong>Clase 9: Lactancia humana</strong>
             <p>
-                Historia de la lactancia. La lactancia humana y salud. Determinantes que influyen. Responsabilidades. Leyes que acompañan.
+                Historia de la lactancia. La lactancia humana y salud. Determinantes que influyen. Responsabilidades.
+                Leyes que acompañan.
             </p>
 
             <strong>Clase 10: Anatomofisiología de la lactancia humana</strong>
             <p>
-                Semiología, fisiología, anatomía de la lactancia humana. Embarazo y lactancia. Propiedades de la leche humana. Composición. Lactancia y microbiota. Eje entero-bronco-mamaria.
+                Semiología, fisiología, anatomía de la lactancia humana. Embarazo y lactancia. Propiedades de la leche
+                humana. Composición. Lactancia y microbiota. Eje entero-bronco-mamaria.
             </p>
 
             <strong>Clase 11: Sistema estomatognático del lactante</strong>
@@ -180,7 +202,9 @@ const header = {
 
             <strong>Clase 12: Lactancia artificial</strong>
             <p>
-                Lactancia artificial. Tetinas. Su impacto en la lactancia y en el desarrollo del sistema estomatognático. Código internacional de sucedáneos de la leche materna. Historia de la leche de fórmula. Indicaciones.
+                Lactancia artificial. Tetinas. Su impacto en la lactancia y en el desarrollo del sistema
+                estomatognático. Código internacional de sucedáneos de la leche materna. Historia de la leche de
+                fórmula. Indicaciones.
             </p>
 
 
@@ -188,22 +212,26 @@ const header = {
 
             <strong>Clase 13: Extracción y almacenamiento de la leche humana</strong>
             <p>
-                Extracción, manipulación y conservación domiciliaria. Vuelta al trabajo remunerado. Dispositivos asociados a la lactancia humana.
+                Extracción, manipulación y conservación domiciliaria. Vuelta al trabajo remunerado. Dispositivos
+                asociados a la lactancia humana.
             </p>
 
             <strong>Clase 14: Principales lesiones del tejido mamario</strong>
             <p>
-                Aspectos preventivos y de detección temprana de enfermedades. Lesiones. Grietas, ingurgitación, mastitis, perlas de leche. Medicamentos y lactancia.
+                Aspectos preventivos y de detección temprana de enfermedades. Lesiones. Grietas, ingurgitación,
+                mastitis, perlas de leche. Medicamentos y lactancia.
             </p>
 
             <strong>Clase 15: Protección y prevención de la lactancia materna</strong>
             <p>
-                Pasos de protección de la lactancia humana. Leyes de protección. Espacios amigos de la lactancia. Centros de lactancia materna. Banco de leche hospitalaria.
+                Pasos de protección de la lactancia humana. Leyes de protección. Espacios amigos de la lactancia.
+                Centros de lactancia materna. Banco de leche hospitalaria.
             </p>
 
             <strong>Clase 16: Lactancia en situaciones especiales</strong>
             <p>
-                Aspectos preventivos y de detección temprana de enfermedades. Lesiones. Necesidades del bebé prematuro. Nutrición y cuidados. Necesidades de la familia. Ictericia. Método madre canguro.
+                Aspectos preventivos y de detección temprana de enfermedades. Lesiones. Necesidades del bebé prematuro.
+                Nutrición y cuidados. Necesidades de la familia. Ictericia. Método madre canguro.
             </p>
 
             <strong>Clase 17: Destete</strong>
@@ -216,7 +244,8 @@ const header = {
 
             <strong>Clase 18: Habilidades de la comunicación</strong>
             <p>
-                Comunicación. Conceptos. Tipos. Interpretaciones. Recursos necesarios. Comunicación asertiva. Escucha activa. Desarrollo de habilidades comunicacionales.
+                Comunicación. Conceptos. Tipos. Interpretaciones. Recursos necesarios. Comunicación asertiva. Escucha
+                activa. Desarrollo de habilidades comunicacionales.
             </p>
 
             <strong>Clase 19: Epigenética</strong>
@@ -239,50 +268,62 @@ const header = {
 
             <strong>Clase 22: Primeros cuidados fisiológicos y culturales</strong>
             <p>
-                Primeros cuidados. Fisiológicos y culturales. Screening. Pesquisa neonatal. Descenso de peso. Deposiciones. Sueño. Colecho seguro. Llanto.
+                Primeros cuidados. Fisiológicos y culturales. Screening. Pesquisa neonatal. Descenso de peso.
+                Deposiciones. Sueño. Colecho seguro. Llanto.
             </p>
 
             <strong>Clase 23: Neurodesarrollo</strong>
             <p>
-                Los primeros 1000 días de desarrollo. Desarrollo intrauterino. Primera infancia. Desarrollo y habilidades del bebé de los 0 a los 6 meses de edad. Desarrollo y crecimiento del bebé lactante.
+                Los primeros 1000 días de desarrollo. Desarrollo intrauterino. Primera infancia. Desarrollo y
+                habilidades del bebé de los 0 a los 6 meses de edad. Desarrollo y crecimiento del bebé lactante.
             </p>
 
             <strong>Clase 24: Primeros auxilios</strong>
             <p>
-                Atragantamiento y asfixia. Cuándo y cómo intervenir. RCP. Maniobra de Heimlich en lactantes, niños, adultos, embarazadas.
+                Atragantamiento y asfixia. Cuándo y cómo intervenir. RCP. Maniobra de Heimlich en lactantes, niños,
+                adultos, embarazadas.
             </p>
-
 
 
             <h4>Módulo 7: Nutrición en la perinatalidad</h4>
 
             <strong>Clase 25: Nutrición en la perinatalidad</strong>
             <p>
-                Necesidades nutricionales durante la gestación y postparto. Microbiota. Eje intestino-cerebro. Alimentos recomendados y no recomendados. Alimentación basada en plantas. Familias vegetarianas, veganas y alimentación basada en plantas desde la evidencia.
+                Necesidades nutricionales durante la gestación y postparto. Microbiota. Eje intestino-cerebro. Alimentos
+                recomendados y no recomendados. Alimentación basada en plantas. Familias vegetarianas, veganas y
+                alimentación basada en plantas desde la evidencia.
             </p>
 
             <strong>Clase 26: Nutrición en la primera infancia</strong>
             <p>
-                Necesidades durante la primera infancia. Alimentación del bebé de 0 a 6 meses. Alimentación complementaria. Requisitos para iniciarla. Alimentación complementaria y microbiota. Alimentos recomendados y no recomendados. APLV. Alimentos potencialmente alergénicos y recomendaciones actuales. El rol de la familia, sociedad y el ámbito escolar.
+                Necesidades durante la primera infancia. Alimentación del bebé de 0 a 6 meses. Alimentación
+                complementaria. Requisitos para iniciarla. Alimentación complementaria y microbiota. Alimentos
+                recomendados y no recomendados. APLV. Alimentos potencialmente alergénicos y recomendaciones actuales.
+                El rol de la familia, sociedad y el ámbito escolar.
             </p>
 
             <strong>Clase 27: Medios de implementación de la alimentación complementaria</strong>
             <p>
-                La alimentación autorregulada. Procesamiento sensorial en la alimentación. El rol de la familia y del entorno. Baby led Weaning. Baby led introduced to solid. Mixto. Papillas. Qué y cómo ofrecer los alimentos. Utensilios necesarios. Pauta de introducción. Arcadas y ahogos. Importancia masticatoria de realizar la transición a sólidos.
+                La alimentación autorregulada. Procesamiento sensorial en la alimentación. El rol de la familia y del
+                entorno. Baby led Weaning. Baby led introduced to solid. Mixto. Papillas. Qué y cómo ofrecer los
+                alimentos. Utensilios necesarios. Pauta de introducción. Arcadas y ahogos. Importancia masticatoria de
+                realizar la transición a sólidos.
             </p>
 
             <strong>Clase 28: Cuidado bucal en la primera infancia</strong>
             <p>
-                Cuidado bucal del bebé desde la gestación y durante la primera infancia. Generalidades de las alteraciones de la cavidad bucal y la alimentación. Enfermedad caries. Los ultraprocesados y la alimentación familiar. ECNT. Ley de Etiquetado frontal.
+                Cuidado bucal del bebé desde la gestación y durante la primera infancia. Generalidades de las
+                alteraciones de la cavidad bucal y la alimentación. Enfermedad caries. Los ultraprocesados y la
+                alimentación familiar. ECNT. Ley de Etiquetado frontal.
             </p>
-
 
 
             <h4>Módulo 8: Primera infancia</h4>
 
             <strong>Clase 29: Primera infancia</strong>
             <p>
-                Rol de las infancias en la sociedad. Leyes y programas de protección. Trabajo profesional interdisciplinario.
+                Rol de las infancias en la sociedad. Leyes y programas de protección. Trabajo profesional
+                interdisciplinario.
             </p>
 
             <strong>Clase 30: Control de esfínter</strong>
@@ -292,12 +333,15 @@ const header = {
 
             <strong>Clase 31: Crianza</strong>
             <p>
-                Apego. Teoría. Recursos. Organizadores tempranos del psiquismo: sonrisa social, angustia del 8vo mes, adquisición del no. Construcción de los límites. Hábitos. Miedos y ansiedades. Juego. Motricidad: movimiento libre. Educación Sexual Infantil (ESI).
+                Apego. Teoría. Recursos. Organizadores tempranos del psiquismo: sonrisa social, angustia del 8vo mes,
+                adquisición del no. Construcción de los límites. Hábitos. Miedos y ansiedades. Juego. Motricidad:
+                movimiento libre. Educación Sexual Infantil (ESI).
             </p>
 
             <strong>Clase 32: Escolaridad</strong>
             <p>
-                Escolaridad. Elección escolar. Distintas corrientes educativas como: Montessori, Waldorf, Pikler, Enfoque Reggio, etc.
+                Escolaridad. Elección escolar. Distintas corrientes educativas como: Montessori, Waldorf, Pikler,
+                Enfoque Reggio, etc.
             </p>
 
         </div>
@@ -312,7 +356,8 @@ const header = {
         <div class="basic-text">
             <h4>¿Te animamos a sumarte a este proceso?</h4>
             <p>
-                Te invitamos a ser parte de un modelo de atención y acompañamiento que deje huellas favorables en las familias y sociedad.
+                Te invitamos a ser parte de un modelo de atención y acompañamiento que deje huellas favorables en las
+                familias y sociedad.
             </p>
             <a href="/src/assets/20240202-FSP.pdf" target="_blank">
                 <Button>
