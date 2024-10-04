@@ -1,0 +1,167 @@
+[
+	{
+		"title": "Profesionales de Salud",
+		"icon": "chart-pie",
+		"description": " ",
+		"category": "Analytics"
+	},
+	{
+		"title": "Profesionales de Educación",
+		"icon": "squares-plus",
+		"description": " ",
+		"category": "Analytics"
+	},
+	{
+		"title": "Estudiantes avanzados de carreras afines",
+		"icon": "cliboard-document-check",
+		"description": " ",
+		"category": "Analytics"
+	},
+	{
+		"title": "500 horas",
+		"icon": "computer-desktop",
+		"description": " ",
+		"category": "Security"
+	},
+	{
+		"title": "Inicia el 06/03/2024",
+		"icon": "computer-desktop",
+		"description": " ",
+		"category": "Security"
+	},
+	{
+		"title": "Clases Virtuales",
+		"icon": "computer-desktop",
+		"description": " ",
+		"category": "Security"
+	},
+	{
+		"title": "Con Certificación",
+		"icon": "computer-desktop",
+		"description": " ",
+		"category": "Security"
+	},
+	{
+		"title": "10 meses de cursado",
+		"icon": "shield-check",
+		"description": " ",
+		"category": "Security"
+	},
+	{
+		"title": "2 exámenes parciales",
+		"icon": "arrow-treding-up",
+		"description": " ",
+		"category": "Security"
+	},
+	{
+		"title": "1 examen final",
+		"icon": "bell-alert",
+		"description": " ",
+		"category": "Security"
+	},
+	{
+		"title": "Clases sincrónicas",
+		"icon": "bell-alert",
+		"description": " ",
+		"category": "Security"
+	},
+	{
+		"title": "Clases asincrónicas",
+		"icon": "bell-alert",
+		"description": " ",
+		"category": "Security"
+	},
+	{
+		"title": "Tutorías individuales",
+		"icon": "bell-alert",
+		"description": " ",
+		"category": "Security"
+	},
+
+	{
+		"title": " ",
+		"icon": "user-group",
+		"description": "Respeto por cada profesión y su desempeño. Además del respeto por las distintas culturas, creencias, decisiones o elecciones tanto familiares como profesionales.",
+		"category": "Productivity"
+	},
+	{
+		"title": " ",
+		"icon": "user-group",
+		"description": "Accesibilidad para poder llegar a quienes deseen seguir formándose y aprendiendo para acompañar desde las diferentes disciplinas.",
+		"category": "Productivity"
+	},
+	{
+		"title": " ",
+		"icon": "user-group",
+		"description": "Ser una red interdisciplinaria de profesionales y docentes que trabajan para cuidar y mejorar la salud perinatal.",
+		"category": "Productivity"
+	},
+	{
+		"title": " ",
+		"icon": "user-group",
+		"description": "Comunicación fluida por los canales disponibles.\nTrabajo interdisciplinario continuo.",
+		"category": "Productivity"
+	},
+	{
+		"title": " ",
+		"icon": "user-group",
+		"description": "La cercanía en el cursado y posterior al mismo.",
+		"category": "Productivity"
+	},
+	{
+		"title": " ",
+		"icon": "user-group",
+		"description": "Calidez humana y profesional.",
+		"category": "Productivity"
+	},
+	{
+		"title": " ",
+		"icon": "user-group",
+		"description": "Honestidad en todo nuestro trabajo.",
+		"category": "Productivity"
+	},
+	{
+		"title": " ",
+		"icon": "credit-card",
+		"description": "Aportar información desde la evidencia, de manera integral e interdisciplinaria a quienes trabajen o se interesen en la promoción, protección y el fortalecimiento de embarazos saludables, partos respetados, puerperios seguros, sostenidos, acompañados y del cuidado de la primera infancia.",
+		"category": "Integrations"
+	},
+
+	{
+		"title": " ",
+		"icon": "credit-card",
+		"description": "Acompañar desde la actualización a los profesionales que imparten atención en el área perinatal con el enfoque desde una perspectiva ecosistémica centrada en la familia.",
+		"category": "Integrations"
+	},
+
+	{
+		"title": " ",
+		"icon": "credit-card",
+		"description": "Visibilizar la importancia de los vínculos tempranos saludables, bienestar físico, mental y social desde el respeto a la cultura, creencias, realidades de cada familia y disciplina profesional.",
+		"category": "Integrations"
+	},
+	{
+		"title": " ",
+		"icon": "credit-card",
+		"description": "Desarrollar recursos para articular el trabajo en conjunto con los equipos asistenciales dentro de los distintos niveles de atención de las área de salud.",
+		"category": "Integrations"
+	},
+	{
+		"title": " ",
+		"icon": "credit-card",
+		"description": "Desarrollar herramientas y habilidades para acompañar diadas y familias en la perinatalidad.",
+		"category": "Integrations"
+	},
+	{
+		"title": " ",
+		"icon": "credit-card",
+		"description": "Generar una atención integral y transdisciplinaria.",
+		"category": "Integrations"
+	},
+	{
+		"title": " ",
+		"icon": "credit-card",
+		"description": "Comprender el desarrollo evolutivo del ser humano desde su integralidad.",
+		"category": "Integrations"
+	}
+]

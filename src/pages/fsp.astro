@@ -1,0 +1,59 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Feature from '../components/blocks/features/FeatureSticky.astro'
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+
+// Data
+import featuresData from '../data/json-files/featuresDataFSP.json'
+// - Feature Categories
+const featuresAnalytics = featuresData.filter((feature) => feature.category === 'Analytics')
+const featuresProductivity = featuresData.filter((feature) => feature.category === 'Productivity')
+const featuresSecurity = featuresData.filter((feature) => feature.category === 'Security')
+const featuresIntegrations = featuresData.filter((feature) => feature.category === 'Integrations')
+const featuresSupport = featuresData.filter((feature) => feature.category === 'Support')
+
+// Content
+// - SEO
+const SEO = {
+	title: 'EASPAC | Escuela Argentina de Salud Perinatal',
+	description:
+		"Formación en Salud Perinatal"
+}
+// - Page Header
+const header = {
+	title: 'Formación en <strong>Salud Perinatal</strong>',
+	text: 'La 6ta cohorte de la Formación te espera.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={header.title} text={header.text} />
+	<Feature
+		title="Información general"
+		text="Streamline tasks and focus on what matters with tools designed to boost your productivity."
+		data={featuresSecurity}
+		classes="bg-neutral-50 dark:bg-neutral-900"
+	/>
+	<Feature
+		title="Destinado a"
+		text="Delve into your data with precision and uncover actionable insights."
+		data={featuresAnalytics}
+	/>
+
+	<Feature
+		title="Nos distingue"
+		text="Keep your data safe with top-notch security measures and real-time threat detection."
+		data={featuresProductivity}
+	/>
+	<Feature
+		title="Objetivos"
+		text="Effortlessly connect your favorite apps and automate workflows for a smoother workday."
+		data={featuresIntegrations}
+		classes="bg-neutral-50 dark:bg-neutral-900"
+	/>
+	<CTA />
+</Layout>

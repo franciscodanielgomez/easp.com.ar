@@ -1,0 +1,328 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import SidebarContent from '../components/blocks/basic/StickySidebar.astro'
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import Button from "../components/ui/Button.astro";
+
+// Content
+// - SEO
+const SEO = {
+    title: 'Foxi | Terms of Service',
+    description:
+        "Foxi's terms of service outlines the rules and regulations that govern your use of our services. Please read them carefully to understand your rights and responsibilities."
+}
+// - Page Header
+const header = {
+    title: 'Formación en <strong>Salud Perinatal</strong>.',
+    text: 'La 6ta cohorte de la Formación te espera.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+    <Hero title={header.title} text={header.text}/>
+    <SidebarContent>
+        <div slot="sidebar">
+            <h3>Introducción</h3>
+            <p>
+                Creemos firmemente en un acompañamiento humanizado, basado en la evidencia de la mano de profesionales
+                comprometidos.
+            </p>
+        </div>
+        <div class="basic-text">
+            <h4>Información general</h4>
+            <br>
+            <ul class="course-details">
+                <li>500 horas</li>
+                <li>Inicia el 06/03/2024</li>
+                <li>Clases virtuales</li>
+                <li>Con certificación</li>
+            </ul>
+            <br>
+            <h4>Destinado a</h4>
+            <br>
+            <ul class="course-details">
+                <li>Profesionales de Salud</li>
+                <li>Profesionales de Educación</li>
+                <li>Estudiantes avanzados de carreras afines</li>
+            </ul>
+            <br>
+            <h4>Modalidad</h4>
+            <br>
+            <ul class="course-details">
+                <li>10 meses de cursado.</li>
+                <li>2 exámenes parciales.</li>
+                <li>1 examen final.</li>
+                <li>Clases sincrónicas.</li>
+                <li>Clases asincrónicas.</li>
+                <li>Tutorías individuales.</li>
+            </ul>
+        </div>
+    </SidebarContent>
+    <SidebarContent classes="bg-neutral-50 dark:bg-neutral-900">
+        <div slot="sidebar">
+            <h3>Más información</h3>
+            <p>
+                Red interdisciplinaria que promueve salud perinatal con respeto y accesibilidad.
+            </p>
+        </div>
+        <div class="basic-text">
+            <h4>Nos distingue</h4>
+            <p>
+                Nuestra misión es ser una red interdisciplinaria de profesionales y docentes dedicados a cuidar y
+                mejorar la salud perinatal. Fomentamos la cercanía durante el cursado y en el seguimiento posterior,
+                respetando cada profesión y su desempeño, así como las distintas culturas, creencias y decisiones
+                familiares y profesionales. Nos comprometemos a garantizar la accesibilidad para quienes deseen
+                continuar su formación y aprendizaje en las diversas disciplinas. Valoramos la calidez humana y
+                profesional, la honestidad en todas nuestras acciones, y promovemos una comunicación fluida a través de
+                los canales disponibles. Además, trabajamos en un marco de colaboración interdisciplinaria continua.
+            </p>
+
+
+            <h4>Objetivos de nuestra Formación</h4>
+            <p>Acompañar a los profesionales que brindan atención en el área perinatal a través de una actualización
+                que integre una perspectiva ecosistémica centrada en la familia. Proveer información basada en evidencia
+                de manera integral e interdisciplinaria para quienes trabajan o se interesan en la promoción, protección
+                y fortalecimiento de embarazos saludables, partos respetados, puerperios seguros y el cuidado de la
+                primera infancia. Visibilizar la importancia de los vínculos tempranos saludables y del bienestar
+                físico, mental y social, respetando la cultura, creencias y realidades de cada familia y disciplina
+                profesional. Generar una atención integral y transdisciplinaria que comprenda el desarrollo evolutivo
+                del ser humano en su totalidad. Desarrollar herramientas y habilidades para acompañar a diadas y
+                familias en la perinatalidad, así como recursos para articular el trabajo conjunto con los equipos
+                asistenciales en los diferentes niveles de atención del área de salud.
+            </p>
+        </div>
+    </SidebarContent>
+    <SidebarContent>
+        <div slot="sidebar">
+            <h3>Programa</h3>
+            <p>
+                Salud, lactancia y desarrollo infantil en perinatalidad.
+            </p>
+        </div>
+        <div class="basic-text">
+            <h4>Módulo 1: Salud Perinatal</h4>
+
+            <strong>Clase 1: Historia de la salud perinatal</strong>
+            <p>
+                Historia de la salud. Proceso salud enfermedad. Salud perinatal. Concepto. Quiénes intervienen. Su
+                relación con el embarazo, lactancia, nutrición en la perinatalidad y primera infancia.
+            </p>
+
+            <strong>Clase 2: Anticoncepción</strong>
+            <p>
+                Anticoncepción. Métodos compatibles con la lactancia humana. Planificación Familiar.
+            </p>
+
+            <strong>Clase 3: Introducción a la salud perinatal</strong>
+            <p>
+                Gestación. Atención prenatal. Cambios fisiológicos, físicos, biológicos, emocionales, sociales durante
+                el embarazo. Necesidades durante el parto. Plan de nacimiento. Información y decisión. Trato respetuoso
+                materno y neonatal. Sala de parto humanizado con adaptación cultural. Figuras que acompañan.
+                Maternidades seguras y centradas en la familia. Leyes y Derechos.
+            </p>
+
+            <strong>Clase 4: Cuidado bucal durante el embarazo y puerperio</strong>
+            <p>
+                Salud bucal: su impacto e importancia durante el embarazo. Enfermedad caries. Microbiota. Cuidado bucal
+                desde antes de la gestación, durante la misma y en el post parto.
+            </p>
+
+
+            <h4>Módulo 2: Salud Mental Perinatal</h4>
+
+            <strong>Clase 5: Introducción a la salud mental perinatal</strong>
+            <p>
+                Salud mental perinatal. Concepto. Objetivos. Cambios durante el embarazo. Neurobiología del parto. El
+                cerebro maternal. El parto como evento neurobiológico. Neurohormonas maternas y fetales y su papel en el
+                parto: oxitocina, endorfinas, catecolaminas y prolactina. Postparto inmediato: periodo sensitivo,
+                sincronía y lactancia materna.
+            </p>
+
+            <strong>Clase 6: Parentalidades</strong>
+            <p>
+                Díada. Vínculo. Concepto. Principales teorías. Construcción de la ma-paternidad como crisis vital. Rol
+                de la pareja durante la etapa perinatal. Nuevas parentalidades. La maternidad en la ciencia: un proceso
+                social entre la biología y la cultura. Períodos de conexión y vínculo intrauterino. Puerperio: según la
+                medicina y la psicología. Baby blues. Depresión post parto. Señales de alerta.
+            </p>
+
+            <strong>Clase 7: Duelo en perinatalidad</strong>
+            <p>
+                Conceptos. Duelo perinatal. Necesidades de la diada y la familia. Recursos. Rol como profesionales que
+                acompañan.
+            </p>
+
+            <strong>Clase 8: Taller vuelta a casa</strong>
+            <p>
+                Necesidades para regresar a casa. Preparaciones previas. Quienes brindan servicios. Organización
+                familiar. Red. Hermanos mayores. Pareja.
+            </p>
+
+            <h4>Módulo 3: Lactancia humana</h4>
+
+            <strong>Clase 9: Lactancia humana</strong>
+            <p>
+                Historia de la lactancia. La lactancia humana y salud. Determinantes que influyen. Responsabilidades. Leyes que acompañan.
+            </p>
+
+            <strong>Clase 10: Anatomofisiología de la lactancia humana</strong>
+            <p>
+                Semiología, fisiología, anatomía de la lactancia humana. Embarazo y lactancia. Propiedades de la leche humana. Composición. Lactancia y microbiota. Eje entero-bronco-mamaria.
+            </p>
+
+            <strong>Clase 11: Sistema estomatognático del lactante</strong>
+            <p>
+                Anatomía del sistema estomatognático. Principales patologías. Flap. Anquiloglosia.
+            </p>
+
+            <strong>Clase 12: Lactancia artificial</strong>
+            <p>
+                Lactancia artificial. Tetinas. Su impacto en la lactancia y en el desarrollo del sistema estomatognático. Código internacional de sucedáneos de la leche materna. Historia de la leche de fórmula. Indicaciones.
+            </p>
+
+
+            <h4>Módulo 4: Lactancia humana</h4>
+
+            <strong>Clase 13: Extracción y almacenamiento de la leche humana</strong>
+            <p>
+                Extracción, manipulación y conservación domiciliaria. Vuelta al trabajo remunerado. Dispositivos asociados a la lactancia humana.
+            </p>
+
+            <strong>Clase 14: Principales lesiones del tejido mamario</strong>
+            <p>
+                Aspectos preventivos y de detección temprana de enfermedades. Lesiones. Grietas, ingurgitación, mastitis, perlas de leche. Medicamentos y lactancia.
+            </p>
+
+            <strong>Clase 15: Protección y prevención de la lactancia materna</strong>
+            <p>
+                Pasos de protección de la lactancia humana. Leyes de protección. Espacios amigos de la lactancia. Centros de lactancia materna. Banco de leche hospitalaria.
+            </p>
+
+            <strong>Clase 16: Lactancia en situaciones especiales</strong>
+            <p>
+                Aspectos preventivos y de detección temprana de enfermedades. Lesiones. Necesidades del bebé prematuro. Nutrición y cuidados. Necesidades de la familia. Ictericia. Método madre canguro.
+            </p>
+
+            <strong>Clase 17: Destete</strong>
+            <p>
+                Destete fisiológico, dirigido, abrupto. Mitos. Recursos para acompañarlo.
+            </p>
+
+
+            <h4>Módulo 5: Desarrollo profesional y comunicación</h4>
+
+            <strong>Clase 18: Habilidades de la comunicación</strong>
+            <p>
+                Comunicación. Conceptos. Tipos. Interpretaciones. Recursos necesarios. Comunicación asertiva. Escucha activa. Desarrollo de habilidades comunicacionales.
+            </p>
+
+            <strong>Clase 19: Epigenética</strong>
+            <p>
+                Epigenética. Concepto DOHad. Implicancias.
+            </p>
+
+            <strong>Clase 20: Espacios de trabajo</strong>
+            <p>
+                Diferentes espacios de trabajo. Disposición. Sector público. Sector privado. Trabajo en interdisciplina.
+            </p>
+
+
+            <h4>Módulo 6: Cuidados de la primera infancia</h4>
+
+            <strong>Clase 21: Mobiliario infantil</strong>
+            <p>
+                Pautas de seguridad e implementación del mobiliario infantil. Consensos.
+            </p>
+
+            <strong>Clase 22: Primeros cuidados fisiológicos y culturales</strong>
+            <p>
+                Primeros cuidados. Fisiológicos y culturales. Screening. Pesquisa neonatal. Descenso de peso. Deposiciones. Sueño. Colecho seguro. Llanto.
+            </p>
+
+            <strong>Clase 23: Neurodesarrollo</strong>
+            <p>
+                Los primeros 1000 días de desarrollo. Desarrollo intrauterino. Primera infancia. Desarrollo y habilidades del bebé de los 0 a los 6 meses de edad. Desarrollo y crecimiento del bebé lactante.
+            </p>
+
+            <strong>Clase 24: Primeros auxilios</strong>
+            <p>
+                Atragantamiento y asfixia. Cuándo y cómo intervenir. RCP. Maniobra de Heimlich en lactantes, niños, adultos, embarazadas.
+            </p>
+
+
+
+            <h4>Módulo 7: Nutrición en la perinatalidad</h4>
+
+            <strong>Clase 25: Nutrición en la perinatalidad</strong>
+            <p>
+                Necesidades nutricionales durante la gestación y postparto. Microbiota. Eje intestino-cerebro. Alimentos recomendados y no recomendados. Alimentación basada en plantas. Familias vegetarianas, veganas y alimentación basada en plantas desde la evidencia.
+            </p>
+
+            <strong>Clase 26: Nutrición en la primera infancia</strong>
+            <p>
+                Necesidades durante la primera infancia. Alimentación del bebé de 0 a 6 meses. Alimentación complementaria. Requisitos para iniciarla. Alimentación complementaria y microbiota. Alimentos recomendados y no recomendados. APLV. Alimentos potencialmente alergénicos y recomendaciones actuales. El rol de la familia, sociedad y el ámbito escolar.
+            </p>
+
+            <strong>Clase 27: Medios de implementación de la alimentación complementaria</strong>
+            <p>
+                La alimentación autorregulada. Procesamiento sensorial en la alimentación. El rol de la familia y del entorno. Baby led Weaning. Baby led introduced to solid. Mixto. Papillas. Qué y cómo ofrecer los alimentos. Utensilios necesarios. Pauta de introducción. Arcadas y ahogos. Importancia masticatoria de realizar la transición a sólidos.
+            </p>
+
+            <strong>Clase 28: Cuidado bucal en la primera infancia</strong>
+            <p>
+                Cuidado bucal del bebé desde la gestación y durante la primera infancia. Generalidades de las alteraciones de la cavidad bucal y la alimentación. Enfermedad caries. Los ultraprocesados y la alimentación familiar. ECNT. Ley de Etiquetado frontal.
+            </p>
+
+
+
+            <h4>Módulo 8: Primera infancia</h4>
+
+            <strong>Clase 29: Primera infancia</strong>
+            <p>
+                Rol de las infancias en la sociedad. Leyes y programas de protección. Trabajo profesional interdisciplinario.
+            </p>
+
+            <strong>Clase 30: Control de esfínter</strong>
+            <p>
+                Control de esfínteres. Fisiología. Recursos.
+            </p>
+
+            <strong>Clase 31: Crianza</strong>
+            <p>
+                Apego. Teoría. Recursos. Organizadores tempranos del psiquismo: sonrisa social, angustia del 8vo mes, adquisición del no. Construcción de los límites. Hábitos. Miedos y ansiedades. Juego. Motricidad: movimiento libre. Educación Sexual Infantil (ESI).
+            </p>
+
+            <strong>Clase 32: Escolaridad</strong>
+            <p>
+                Escolaridad. Elección escolar. Distintas corrientes educativas como: Montessori, Waldorf, Pikler, Enfoque Reggio, etc.
+            </p>
+
+        </div>
+    </SidebarContent>
+    <SidebarContent classes="bg-neutral-50 dark:bg-neutral-900">
+        <div slot="sidebar">
+            <h3>Descargar PDF</h3>
+            <p>
+                Descarga la información completa sobre nuestra formación.
+            </p>
+        </div>
+        <div class="basic-text">
+            <h4>¿Te animamos a sumarte a este proceso?</h4>
+            <p>
+                Te invitamos a ser parte de un modelo de atención y acompañamiento que deje huellas favorables en las familias y sociedad.
+            </p>
+            <a href="/src/assets/20240202-FSP.pdf" target="_blank">
+                <Button>
+                    Descargar PDF
+                </Button>
+            </a>
+
+
+        </div>
+    </SidebarContent>
+
+
+</Layout>
