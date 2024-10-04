@@ -34,15 +34,14 @@ export interface NavData {
 export const navigationBarData: NavData = {
 	logo: {
 		src: '/logo.svg',
-		alt: 'The tailwind astro theme',
-		text: 'Foxi.'
+		alt: 'Escuela Argentina de Salud Perinatal',
+		text: 'EASPAC'
 	},
 	navItems: [
-		{ name: 'Home', link: '/' },
-		{ name: 'Pricing', link: '/pricing' },
-		{ name: 'Features', link: '/features' },
+		{ name: 'Inicio', link: '/' },
+		{ name: 'Nosotros', link: '/about' },
 		{
-			name: 'Resources',
+			name: 'Formaciones',
 			link: '#',
 			submenu: [
 				{ name: 'Blog', link: '/blog' },
@@ -51,7 +50,7 @@ export const navigationBarData: NavData = {
 				{ name: 'Terms', link: '/terms' }
 			]
 		},
-		{ name: 'Contact', link: '/contact' }
+		{ name: 'Contacto', link: '/contact' }
 	],
-	navActions: [{ name: 'Try it now', link: '/', style: 'primary', size: 'lg' }]
+	navActions: [{ name: 'Quiero asesorarme', link: '/about', style: 'primary', size: 'lg' }]
 }

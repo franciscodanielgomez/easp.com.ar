@@ -4,38 +4,41 @@
 // Description: A modal with a form to sign up.
 
 // Components
-// - UI
 import Modal from '../../ui/Modal.astro'
 import Form from '../../ui/forms/Form.astro'
 import FormField from '../../ui/forms/partials/FormField.astro'
 import InputField from '../../ui/forms/form-elements/InputField.astro'
 import Button from '../../ui/Button.astro'
-import { Icon } from 'astro-icon/components'
 
 // Props
 type Props = {
 	classes?: string
 }
 const { classes } = Astro.props
+
+// State for the name
+let name = "";
 ---
 
-<Modal id="signup" classes={classes} title="Sign up">
-	<p class="mb-0">Enter your email bellow to get started with Foxi.</p>
-	<Form>
+<Modal id="signup" classes={classes} title="Quiero asesorarme">
+	<p class="mb-0">Ingrese su nombre completo a continuación</p>
+	<Form on:submit={(e) => {
+		e.preventDefault(); // Prevent the default form submission
+        const whatsappUrl = `https://wa.me/5493516616213?text=Hola%20mi%20nombre%20es%20${encodeURIComponent(name)}`;
+
+		// Abrir WhatsApp en una nueva pestaña
+		window.open(whatsappUrl, '_blank');
+	}}>
 		<FormField>
-			<InputField type="email" id="email" label="Your Email" />
+			<InputField type="text" id="name" label="Nombre y Apellido" bind:value={name} />
 		</FormField>
-		<Button style="primary" type="submit" classes="w-full" size="lg">Sign up</Button>
-		<div class="my-2 text-center">or</div>
 		<Button
 			style="primary"
 			type="submit"
 			classes="w-full"
 			size="lg"
-			classes="!bg-white w-full !text-neutral-500 border border-neutral-100"
 		>
-			<Icon name="google-logo" class="h-6 w-6" />
-			Signup with Google
+			Solicitar asesoría
 		</Button>
 	</Form>
 </Modal>

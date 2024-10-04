@@ -1,0 +1,25 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Hero from '../components/blocks/hero/HomeAbout.astro'
+import HighlightBlocks from '../components/blocks/highlights/HightlightAbout.astro'
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+
+// Content
+// - Testimonial background
+import testimonialBackground from '../assets/testimonial-bg-01.webp'
+// - SEO
+const SEO = {
+	title: 'EASP | ¡Bienvenido/a a la Escuela Argentina de Salud Perinatal - Asociación Civil!\n',
+	description:
+		'Somos profesionales de la salud que trabajamos para promover embarazos saludables, partos respetados, puerperios seguros y el cuidado de la salud del bebé en sus 3 primeros años de vida.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero />
+	<HighlightBlocks />
+	<CTA />
+</Layout>
