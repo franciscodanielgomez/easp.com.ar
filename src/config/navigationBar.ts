@@ -39,6 +39,7 @@ export const navigationBarData: NavData = {
 	},
 	navItems: [
 
+		{ name: 'Inicio', link: '/' },
 		{ name: 'Nosotros', link: '/about' },
 		{
 			name: 'Formaciones',
