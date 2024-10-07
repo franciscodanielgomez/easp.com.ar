@@ -27,7 +27,7 @@ export const configData: Config = {
 	ogImage: '/og.jpg',
 	logo: {
 		src: '/logo.svg',
-		alt: 'Foxi. logo'
+		alt: 'EASP. logo'
 	},
 	canonical: true,
 	noindex: false,

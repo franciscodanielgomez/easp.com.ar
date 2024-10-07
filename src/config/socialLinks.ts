@@ -11,17 +11,22 @@ export interface SocialLink {
 export const socialLinks: SocialLink[] = [
 	{
 		name: 'facebook',
-		link: '/',
+		link: 'https://www.facebook.com/easp.oficial',
 		icon: 'fb-icon'
 	},
 	{
-		name: 'twitter',
-		link: '/',
+		name: 'instagram',
+		link: 'https://www.instagram.com/easp.oficial/',
 		icon: 'twitter-icon'
 	},
 	{
 		name: 'discord',
-		link: '/',
+		link: 'https://www.linkedin.com/company/easp-oficial/',
+		icon: 'discord-icon'
+	},
+	{
+		name: 'discord',
+		link: 'mailto:contacto@easp.com.ar',
 		icon: 'discord-icon'
 	}
 ]

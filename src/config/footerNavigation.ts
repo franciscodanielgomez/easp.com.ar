@@ -40,8 +40,8 @@ export const footerNavigationData: FooterData = {
 			'Somos profesionales de la salud que trabajamos para promover embarazos saludables, partos respetados, puerperios seguros y el cuidado de la salud del bebé en sus 3 primeros años de vida.',
 		logo: {
 			src: '/logo.svg',
-			alt: 'The tailwind astro theme',
-			text: 'Foxi.'
+			alt: 'Escuela Argentina de Salud Perinatal',
+			text: 'Escuela Argentina de Salud Perinatal'
 		}
 	},
 	footerColumns: [
@@ -61,8 +61,8 @@ export const footerNavigationData: FooterData = {
 					subCategoryLink: '/contact'
 				},
 				{
-					subCategory: 'Blog',
-					subCategoryLink: '/blog'
+					subCategory: 'Aula',
+					subCategoryLink: 'https://aulavirtual.easp.com.ar/'
 				}
 			]
 		},
@@ -84,7 +84,7 @@ export const footerNavigationData: FooterData = {
 			]
 		},
 		{
-			category: 'Get in touch',
+			category: 'Otros links',
 			subCategories: [
 				{
 					subCategory: 'Preguntas Frecuentes',

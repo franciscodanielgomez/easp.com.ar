@@ -50,7 +50,7 @@ export const navigationBarData: NavData = {
 				{ name: 'Formación en Lactancia Humana', link: '/formacion-flh' },
 			]
 		},
-		{ name: 'Aula Virtual', link: 'https://aulavirtual.easp.com.ar' },
+		{ name: 'Aula', link: 'https://aulavirtual.easp.com.ar' },
 		{ name: 'Contacto', link: '/contact' }
 	],
 	navActions: [{ name: 'Quiero asesorarme', link: '/about', style: 'primary', size: 'lg' }]
