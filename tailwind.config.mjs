@@ -32,17 +32,17 @@ export default {
       colors: {
         transparent: "transparent",
         primary: {
-          50: "#fdf2f8",
-          100: "#fce7f3",
-          200: "#fbcfe8",
-          300: "#f9a8d4",
-          400: "#f472b6",
-          500: "#E2187D",
-          600: "#db2777",
-          700: "#be185d",
-          800: "#9d174d",
-          900: "#831843",
-          950: "#500724",
+          50: "#e6f6f7",   // Muy claro
+          100: "#cceff0",  // Claro
+          200: "#99dfe1",  // Más claro
+          300: "#66cfd2",  // Intermedio claro
+          400: "#33bfc3",  // Más cercano al base
+          500: "#36B1BB",  // Base
+          600: "#2e9fa8",  // Más oscuro
+          700: "#267d84",  // Bastante oscuro
+          800: "#1e6267",  // Oscuro
+          900: "#144244",  // Muy oscuro
+          950: "#0b2c2e",  // Casi negro
         },
         neutral: {
           50: "#f8fafc",

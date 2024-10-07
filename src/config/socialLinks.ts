@@ -27,6 +27,6 @@ export const socialLinks: SocialLink[] = [
 	{
 		name: 'discord',
 		link: 'mailto:contacto@easp.com.ar',
-		icon: 'discord-icon'
+		icon: 'twitter-icon'
 	}
 ]
